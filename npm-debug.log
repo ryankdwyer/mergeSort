@@ -1,0 +1,1077 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'tesseract-js' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'tesseract-js', null ]
+7 verbose cache add spec tesseract-js
+8 silly cache add parsed spec { raw: 'tesseract-js',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'tesseract-js',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed tesseract-js@*
+10 verbose addNamed "*" is a valid semver range for tesseract-js
+11 silly addNameRange { name: 'tesseract-js', range: '*', hasData: false }
+12 silly mapToRegistry name tesseract-js
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/tesseract-js
+16 verbose addNameRange registry:https://registry.npmjs.org/tesseract-js not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/tesseract-js
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:28:55 PM
+20 verbose request id 088280da18b8779a
+21 http request GET https://registry.npmjs.org/tesseract-js
+22 http 200 https://registry.npmjs.org/tesseract-js
+23 silly get cb [ 200,
+23 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"8EGMCQQS13QJLPD5J12IPROLV"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '3427',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     date: 'Fri, 31 Jul 2015 19:28:55 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-atl6221-ATL',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1438370935.325096,VS0,VE95',
+23 silly get     vary: 'Accept' } ]
+24 verbose get saving tesseract-js to /Users/ryan/.npm/registry.npmjs.org/tesseract-js/.cache.json
+25 silly addNameRange number 2 { name: 'tesseract-js', range: '*', hasData: true }
+26 silly addNameRange versions [ 'tesseract-js', [ '0.0.1' ] ]
+27 silly addNamed tesseract-js@0.0.1
+28 verbose addNamed "0.0.1" is a plain semver version for tesseract-js
+29 silly mapToRegistry name tesseract-js
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/tesseract-js
+33 verbose addRemoteTarball https://registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz',
+34 verbose addRemoteTarball   '855fd8b6940aca5aed24298e136efca98ffc1d8f' ]
+35 info retry fetch attempt 1 at 3:28:55 PM
+36 info attempt registry request try #1 at 3:28:55 PM
+37 http fetch GET https://registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz
+38 http fetch 200 https://registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz
+39 silly fetchAndShaCheck shasum 855fd8b6940aca5aed24298e136efca98ffc1d8f
+40 verbose addTmpTarball /tmp/npm-15294-c91e0de3/registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for tesseract-js@0.0.1
+42 silly cache afterAdd tesseract-js@0.0.1
+43 verbose afterAdd /Users/ryan/.npm/tesseract-js/0.0.1/package/package.json not in flight; writing
+44 verbose afterAdd /Users/ryan/.npm/tesseract-js/0.0.1/package/package.json written
+45 silly install resolved [ { name: 'tesseract-js',
+45 silly install resolved     description: 'Javascript wrapper for tesseract OCR.',
+45 silly install resolved     version: '0.0.1',
+45 silly install resolved     main: 'lib/tesseract.js',
+45 silly install resolved     keywords:
+45 silly install resolved      [ 'image processing',
+45 silly install resolved        'text recognition',
+45 silly install resolved        'tesseract-ocr',
+45 silly install resolved        'tesseract.js',
+45 silly install resolved        'tesseract-js',
+45 silly install resolved        'ocr' ],
+45 silly install resolved     tags:
+45 silly install resolved      [ 'image processing',
+45 silly install resolved        'text recognition',
+45 silly install resolved        'tesseract-ocr',
+45 silly install resolved        'tesseract.js',
+45 silly install resolved        'tesseract-js',
+45 silly install resolved        'ocr' ],
+45 silly install resolved     repository: { type: 'git', url: 'git://github.com/suranjan/tesseract.js' },
+45 silly install resolved     bugs: { url: 'https://github.com/suranjan/tesseract.js/issues' },
+45 silly install resolved     licenses: [ [Object] ],
+45 silly install resolved     dependencies: { chai: '1.3.0' },
+45 silly install resolved     devDependencies: {},
+45 silly install resolved     engines: { node: '>= 0.8.x' },
+45 silly install resolved     homepage: 'https://github.com/suranjan/tesseract.js',
+45 silly install resolved     author: { name: 'Sumit Ranjan', url: 'http://www.sumitranjan.com' },
+45 silly install resolved     directories: { lib: './lib', deps: './deps', src: './src' },
+45 silly install resolved     scripts:
+45 silly install resolved      { test: 'node test/tesseractjs.test.js',
+45 silly install resolved        install: 'node-gyp rebuild' },
+45 silly install resolved     gypfile: true,
+45 silly install resolved     readme: 'tesseract.js\n============\n\nJavascript wrapper for tesseract OCR \n\nInstall\n-------\n\n    [sudo] npm install [-g] tesseract-js\n\nFeatures\n--------\n\n\nVersion History\n---------------\n\n*  v0.0.1 - First release\n\nUsage\n-----\n\n```javascript\nvar tesseractjs = require(\'../lib/tesseract\')\nvar t = new tesseractjs.TesseractBinding();\nconsole.log("Object created");\nt.init("eng");\nt.setImage(__dirname + "/images/test-image.jpg");\nt.processImage();\nconsole.log(t.getText());\nt.close();\nt.end();\n```\n\nTesting\n-------\n\n    npm test\n\n\nTODO\n----\n\n\nLicense\n-------\n\nLicensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/). Copyright &copy; 2012 Sumit Ranjan.',
+45 silly install resolved     readmeFilename: 'README.md',
+45 silly install resolved     _id: 'tesseract-js@0.0.1',
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '855fd8b6940aca5aed24298e136efca98ffc1d8f',
+45 silly install resolved        tarball: 'http://registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz' },
+45 silly install resolved     _npmVersion: '1.1.69',
+45 silly install resolved     _npmUser: { name: 'coderush', email: 'sumit.nitt@gmail.com' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     _shasum: '855fd8b6940aca5aed24298e136efca98ffc1d8f',
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/tesseract-js/-/tesseract-js-0.0.1.tgz',
+45 silly install resolved     _from: 'tesseract-js@*' } ]
+46 info install tesseract-js@0.0.1 into /usr/local/lib
+47 info installOne tesseract-js@0.0.1
+48 verbose installOne of tesseract-js to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/ryan/.npm/_locks/tesseract-js-d029f1ac0e0b348e.lock for /usr/local/lib/node_modules/tesseract-js
+50 silly install write writing tesseract-js 0.0.1 to /usr/local/lib/node_modules/tesseract-js
+51 verbose unbuild lib/node_modules/tesseract-js
+52 silly gentlyRm /usr/local/lib/node_modules/tesseract-js is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/tesseract-js
+54 verbose tar unpack /Users/ryan/.npm/tesseract-js/0.0.1/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/tesseract-js
+56 silly gentlyRm /usr/local/lib/node_modules/tesseract-js is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/tesseract-js
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry LICENSE
+63 silly gunzTarPerm extractEntry binding.gyp
+64 silly gunzTarPerm extractEntry deps/leptonica/leptonica-license.txt
+65 silly gunzTarPerm extractEntry deps/leptonica/leptonica.gyp
+66 silly gunzTarPerm extractEntry deps/leptonica/src/list.c
+67 silly gunzTarPerm extractEntry deps/leptonica/src/adaptmap.c
+68 silly gunzTarPerm extractEntry deps/leptonica/src/affinecompose.c
+69 silly gunzTarPerm extractEntry deps/leptonica/src/allheaders.h
+70 silly gunzTarPerm extractEntry deps/leptonica/src/alltypes.h
+71 silly gunzTarPerm extractEntry deps/leptonica/src/arithlow.c
+72 silly gunzTarPerm extractEntry deps/leptonica/src/array.h
+73 silly gunzTarPerm extractEntry deps/leptonica/src/arrayaccess.c
+74 silly gunzTarPerm extractEntry deps/leptonica/src/arrayaccess.h
+75 silly gunzTarPerm extractEntry deps/leptonica/src/bardecode.c
+76 silly gunzTarPerm extractEntry deps/leptonica/src/baseline.c
+77 silly gunzTarPerm extractEntry deps/leptonica/src/bbuffer.c
+78 silly gunzTarPerm extractEntry deps/leptonica/src/bbuffer.h
+79 silly gunzTarPerm extractEntry deps/leptonica/src/bilinear.c
+80 silly gunzTarPerm extractEntry deps/leptonica/src/binarize.c
+81 silly gunzTarPerm extractEntry deps/leptonica/src/binexpand.c
+82 silly gunzTarPerm extractEntry deps/leptonica/src/binexpandlow.c
+83 silly gunzTarPerm extractEntry deps/leptonica/src/binreduce.c
+84 silly gunzTarPerm extractEntry deps/leptonica/src/binreducelow.c
+85 silly gunzTarPerm extractEntry deps/leptonica/src/blend.c
+86 silly gunzTarPerm extractEntry deps/leptonica/src/bmf.c
+87 silly gunzTarPerm extractEntry deps/leptonica/src/bmf.h
+88 silly gunzTarPerm extractEntry deps/leptonica/src/bmp.h
+89 silly gunzTarPerm extractEntry deps/leptonica/src/bmpio.c
+90 silly gunzTarPerm extractEntry deps/leptonica/src/bmpiostub.c
+91 silly gunzTarPerm extractEntry deps/leptonica/src/boxbasic.c
+92 silly gunzTarPerm extractEntry deps/leptonica/src/boxfunc1.c
+93 silly gunzTarPerm extractEntry deps/leptonica/src/boxfunc2.c
+94 silly gunzTarPerm extractEntry deps/leptonica/src/boxfunc3.c
+95 silly gunzTarPerm extractEntry deps/leptonica/src/boxfunc4.c
+96 silly gunzTarPerm extractEntry deps/leptonica/src/bytearray.c
+97 silly gunzTarPerm extractEntry deps/leptonica/src/ccbord.c
+98 silly gunzTarPerm extractEntry deps/leptonica/src/ccbord.h
+99 silly gunzTarPerm extractEntry deps/leptonica/src/ccthin.c
+100 silly gunzTarPerm extractEntry deps/leptonica/src/classapp.c
+101 silly gunzTarPerm extractEntry deps/leptonica/src/colorcontent.c
+102 silly gunzTarPerm extractEntry deps/leptonica/src/coloring.c
+103 silly gunzTarPerm extractEntry deps/leptonica/src/colormap.c
+104 silly gunzTarPerm extractEntry deps/leptonica/src/colormorph.c
+105 silly gunzTarPerm extractEntry deps/leptonica/src/colorquant1.c
+106 silly gunzTarPerm extractEntry deps/leptonica/src/colorquant2.c
+107 silly gunzTarPerm extractEntry deps/leptonica/src/colorseg.c
+108 silly gunzTarPerm extractEntry deps/leptonica/src/colorspace.c
+109 silly gunzTarPerm extractEntry deps/leptonica/src/compare.c
+110 silly gunzTarPerm extractEntry deps/leptonica/src/conncomp.c
+111 silly gunzTarPerm extractEntry deps/leptonica/src/convertfiles.c
+112 silly gunzTarPerm extractEntry deps/leptonica/src/convolve.c
+113 silly gunzTarPerm extractEntry deps/leptonica/src/convolvelow.c
+114 silly gunzTarPerm extractEntry deps/leptonica/src/correlscore.c
+115 silly gunzTarPerm extractEntry deps/leptonica/src/dewarp.c
+116 silly gunzTarPerm extractEntry deps/leptonica/src/dewarp.h
+117 silly gunzTarPerm extractEntry deps/leptonica/src/dnabasic.c
+118 silly gunzTarPerm extractEntry deps/leptonica/src/dwacomb.2.c
+119 silly gunzTarPerm extractEntry deps/leptonica/src/dwacomblow.2.c
+120 silly gunzTarPerm extractEntry deps/leptonica/src/edge.c
+121 silly gunzTarPerm extractEntry deps/leptonica/src/endianness.h
+122 silly gunzTarPerm extractEntry deps/leptonica/src/enhance.c
+123 silly gunzTarPerm extractEntry deps/leptonica/src/environ.h
+124 silly gunzTarPerm extractEntry deps/leptonica/src/fhmtauto.c
+125 silly gunzTarPerm extractEntry deps/leptonica/src/fhmtgen.1.c
+126 silly gunzTarPerm extractEntry deps/leptonica/src/fhmtgenlow.1.c
+127 silly gunzTarPerm extractEntry deps/leptonica/src/finditalic.c
+128 silly gunzTarPerm extractEntry deps/leptonica/src/flipdetect.c
+129 silly gunzTarPerm extractEntry deps/leptonica/src/fliphmtgen.c
+130 silly gunzTarPerm extractEntry deps/leptonica/src/fmorphauto.c
+131 silly gunzTarPerm extractEntry deps/leptonica/src/fmorphgen.1.c
+132 silly gunzTarPerm extractEntry deps/leptonica/src/fmorphgenlow.1.c
+133 silly gunzTarPerm extractEntry deps/leptonica/src/fpix1.c
+134 silly gunzTarPerm extractEntry deps/leptonica/src/fpix2.c
+135 silly gunzTarPerm extractEntry deps/leptonica/src/freetype.c
+136 silly gunzTarPerm extractEntry deps/leptonica/src/freetype.h
+137 silly gunzTarPerm extractEntry deps/leptonica/src/gifio.c
+138 silly gunzTarPerm extractEntry deps/leptonica/src/gifiostub.c
+139 silly gunzTarPerm extractEntry deps/leptonica/src/gplot.c
+140 silly gunzTarPerm extractEntry deps/leptonica/src/gplot.h
+141 silly gunzTarPerm extractEntry deps/leptonica/src/graphics.c
+142 silly gunzTarPerm extractEntry deps/leptonica/src/graymorph.c
+143 silly gunzTarPerm extractEntry deps/leptonica/src/graymorphlow.c
+144 silly gunzTarPerm extractEntry deps/leptonica/src/grayquant.c
+145 silly gunzTarPerm extractEntry deps/leptonica/src/grayquantlow.c
+146 silly gunzTarPerm extractEntry deps/leptonica/src/heap.c
+147 silly gunzTarPerm extractEntry deps/leptonica/src/heap.h
+148 silly gunzTarPerm extractEntry deps/leptonica/src/imageio.h
+149 silly gunzTarPerm extractEntry deps/leptonica/src/jbclass.c
+150 silly gunzTarPerm extractEntry deps/leptonica/src/jbclass.h
+151 silly gunzTarPerm extractEntry deps/leptonica/src/jpegio.c
+152 silly gunzTarPerm extractEntry deps/leptonica/src/jpegiostub.c
+153 silly gunzTarPerm extractEntry deps/leptonica/src/kernel.c
+154 silly gunzTarPerm extractEntry deps/leptonica/src/leptwin.c
+155 silly gunzTarPerm extractEntry deps/leptonica/src/leptwin.h
+156 silly gunzTarPerm extractEntry deps/leptonica/src/libversions.c
+157 silly gunzTarPerm extractEntry deps/leptonica/src/affine.c
+158 silly gunzTarPerm extractEntry deps/leptonica/src/list.h
+159 silly gunzTarPerm extractEntry deps/leptonica/src/maze.c
+160 silly gunzTarPerm extractEntry deps/leptonica/src/morph.c
+161 silly gunzTarPerm extractEntry deps/leptonica/src/morph.h
+162 silly gunzTarPerm extractEntry deps/leptonica/src/morphapp.c
+163 silly gunzTarPerm extractEntry deps/leptonica/src/morphdwa.c
+164 silly gunzTarPerm extractEntry deps/leptonica/src/morphseq.c
+165 silly gunzTarPerm extractEntry deps/leptonica/src/numabasic.c
+166 silly gunzTarPerm extractEntry deps/leptonica/src/numafunc1.c
+167 silly gunzTarPerm extractEntry deps/leptonica/src/numafunc2.c
+168 silly gunzTarPerm extractEntry deps/leptonica/src/pageseg.c
+169 silly gunzTarPerm extractEntry deps/leptonica/src/paintcmap.c
+170 silly gunzTarPerm extractEntry deps/leptonica/src/parseprotos.c
+171 silly gunzTarPerm extractEntry deps/leptonica/src/partition.c
+172 silly gunzTarPerm extractEntry deps/leptonica/src/pdfio.c
+173 silly gunzTarPerm extractEntry deps/leptonica/src/pdfiostub.c
+174 silly gunzTarPerm extractEntry deps/leptonica/src/pix.h
+175 silly gunzTarPerm extractEntry deps/leptonica/src/pix1.c
+176 silly gunzTarPerm extractEntry deps/leptonica/src/pix2.c
+177 silly gunzTarPerm extractEntry deps/leptonica/src/pix3.c
+178 silly gunzTarPerm extractEntry deps/leptonica/src/pix4.c
+179 silly gunzTarPerm extractEntry deps/leptonica/src/pix5.c
+180 silly gunzTarPerm extractEntry deps/leptonica/src/pixabasic.c
+181 silly gunzTarPerm extractEntry deps/leptonica/src/pixacc.c
+182 silly gunzTarPerm extractEntry deps/leptonica/src/pixafunc1.c
+183 silly gunzTarPerm extractEntry deps/leptonica/src/pixafunc2.c
+184 silly gunzTarPerm extractEntry deps/leptonica/src/pixalloc.c
+185 silly gunzTarPerm extractEntry deps/leptonica/src/pixarith.c
+186 silly gunzTarPerm extractEntry deps/leptonica/src/pixcomp.c
+187 silly gunzTarPerm extractEntry deps/leptonica/src/pixconv.c
+188 silly gunzTarPerm extractEntry deps/leptonica/src/pixtiling.c
+189 silly gunzTarPerm extractEntry deps/leptonica/src/pngio.c
+190 silly gunzTarPerm extractEntry deps/leptonica/src/pngiostub.c
+191 silly gunzTarPerm extractEntry deps/leptonica/src/pnmio.c
+192 silly gunzTarPerm extractEntry deps/leptonica/src/pnmiostub.c
+193 silly gunzTarPerm extractEntry deps/leptonica/src/projective.c
+194 silly gunzTarPerm extractEntry deps/leptonica/src/psio1.c
+195 silly gunzTarPerm extractEntry deps/leptonica/src/psio1stub.c
+196 silly gunzTarPerm extractEntry deps/leptonica/src/psio2.c
+197 silly gunzTarPerm extractEntry deps/leptonica/src/psio2stub.c
+198 silly gunzTarPerm extractEntry deps/leptonica/src/ptabasic.c
+199 silly gunzTarPerm extractEntry deps/leptonica/src/ptafunc1.c
+200 silly gunzTarPerm extractEntry deps/leptonica/src/ptra.c
+201 silly gunzTarPerm extractEntry deps/leptonica/src/ptra.h
+202 silly gunzTarPerm extractEntry deps/leptonica/src/quadtree.c
+203 silly gunzTarPerm extractEntry deps/leptonica/src/queue.c
+204 silly gunzTarPerm extractEntry deps/leptonica/src/queue.h
+205 silly gunzTarPerm extractEntry deps/leptonica/src/rank.c
+206 silly gunzTarPerm extractEntry deps/leptonica/src/readbarcode.c
+207 silly gunzTarPerm extractEntry deps/leptonica/src/readbarcode.h
+208 silly gunzTarPerm extractEntry deps/leptonica/src/readfile.c
+209 silly gunzTarPerm extractEntry deps/leptonica/src/regutils.c
+210 silly gunzTarPerm extractEntry deps/leptonica/src/regutils.h
+211 silly gunzTarPerm extractEntry deps/leptonica/src/rop.c
+212 silly gunzTarPerm extractEntry deps/leptonica/src/ropiplow.c
+213 silly gunzTarPerm extractEntry deps/leptonica/src/roplow.c
+214 silly gunzTarPerm extractEntry deps/leptonica/src/rotate.c
+215 silly gunzTarPerm extractEntry deps/leptonica/src/rotateam.c
+216 silly gunzTarPerm extractEntry deps/leptonica/src/rotateamlow.c
+217 silly gunzTarPerm extractEntry deps/leptonica/src/rotateorth.c
+218 silly gunzTarPerm extractEntry deps/leptonica/src/rotateorthlow.c
+219 silly gunzTarPerm extractEntry deps/leptonica/src/rotateshear.c
+220 silly gunzTarPerm extractEntry deps/leptonica/src/runlength.c
+221 silly gunzTarPerm extractEntry deps/leptonica/src/sarray.c
+222 silly gunzTarPerm extractEntry deps/leptonica/src/scale.c
+223 silly gunzTarPerm extractEntry deps/leptonica/src/scalelow.c
+224 silly gunzTarPerm extractEntry deps/leptonica/src/seedfill.c
+225 silly gunzTarPerm extractEntry deps/leptonica/src/seedfilllow.c
+226 silly gunzTarPerm extractEntry deps/leptonica/src/sel1.c
+227 silly gunzTarPerm extractEntry deps/leptonica/src/sel2.c
+228 silly gunzTarPerm extractEntry deps/leptonica/src/selgen.c
+229 silly gunzTarPerm extractEntry deps/leptonica/src/shear.c
+230 silly gunzTarPerm extractEntry deps/leptonica/src/skew.c
+231 silly gunzTarPerm extractEntry deps/leptonica/src/spixio.c
+232 silly gunzTarPerm extractEntry deps/leptonica/src/stack.c
+233 silly gunzTarPerm extractEntry deps/leptonica/src/stack.h
+234 silly gunzTarPerm extractEntry deps/leptonica/src/sudoku.c
+235 silly gunzTarPerm extractEntry deps/leptonica/src/sudoku.h
+236 silly gunzTarPerm extractEntry deps/leptonica/src/textops.c
+237 silly gunzTarPerm extractEntry deps/leptonica/src/tiffio.c
+238 silly gunzTarPerm extractEntry deps/leptonica/src/tiffiostub.c
+239 silly gunzTarPerm extractEntry deps/leptonica/src/utils.c
+240 silly gunzTarPerm extractEntry deps/leptonica/src/viewfiles.c
+241 silly gunzTarPerm extractEntry deps/leptonica/src/warper.c
+242 silly gunzTarPerm extractEntry deps/leptonica/src/watershed.c
+243 silly gunzTarPerm extractEntry deps/leptonica/src/watershed.h
+244 silly gunzTarPerm extractEntry deps/leptonica/src/webpio.c
+245 silly gunzTarPerm extractEntry deps/leptonica/src/webpiostub.c
+246 silly gunzTarPerm extractEntry deps/leptonica/src/writefile.c
+247 silly gunzTarPerm extractEntry deps/leptonica/src/zlibmem.c
+248 silly gunzTarPerm extractEntry deps/leptonica/src/zlibmemstub.c
+249 silly gunzTarPerm extractEntry deps/tesseract/dict/permute.cpp
+250 silly gunzTarPerm extractEntry deps/tesseract/dict/context.cpp
+251 silly gunzTarPerm extractEntry deps/tesseract/dict/dawg.h
+252 silly gunzTarPerm extractEntry deps/tesseract/dict/dict.cpp
+253 silly gunzTarPerm extractEntry deps/tesseract/dict/dict.h
+254 silly gunzTarPerm extractEntry deps/tesseract/dict/hyphen.cpp
+255 silly gunzTarPerm extractEntry deps/tesseract/dict/matchdefs.h
+256 silly gunzTarPerm extractEntry deps/tesseract/dict/permdawg.cpp
+257 silly gunzTarPerm extractEntry deps/tesseract/dict/dawg.cpp
+258 silly gunzTarPerm extractEntry deps/tesseract/dict/permute.h
+259 silly gunzTarPerm extractEntry deps/tesseract/dict/states.cpp
+260 silly gunzTarPerm extractEntry deps/tesseract/dict/states.h
+261 silly gunzTarPerm extractEntry deps/tesseract/dict/stopper.cpp
+262 silly gunzTarPerm extractEntry deps/tesseract/dict/stopper.h
+263 silly gunzTarPerm extractEntry deps/tesseract/dict/trie.cpp
+264 silly gunzTarPerm extractEntry deps/tesseract/dict/trie.h
+265 silly gunzTarPerm extractEntry deps/tesseract/api/apitypes.h
+266 silly gunzTarPerm extractEntry deps/tesseract/api/baseapi.cpp
+267 silly gunzTarPerm extractEntry deps/tesseract/api/baseapi.h
+268 silly gunzTarPerm extractEntry deps/tesseract/api/capi.cpp
+269 silly gunzTarPerm extractEntry deps/tesseract/api/capi.h
+270 silly gunzTarPerm extractEntry deps/tesseract/api/tesseractmain.cpp
+271 silly gunzTarPerm extractEntry deps/tesseract/api/tesseractmain.h
+272 silly gunzTarPerm extractEntry deps/tesseract/api/version.h
+273 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ocrrow.h
+274 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blckerr.h
+275 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blobbox.h
+276 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blobs.cpp
+277 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blobs.h
+278 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blread.cpp
+279 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blread.h
+280 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/boxread.cpp
+281 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/boxread.h
+282 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/boxword.cpp
+283 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/boxword.h
+284 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ccstruct.cpp
+285 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ccstruct.h
+286 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/coutln.cpp
+287 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/coutln.h
+288 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/crakedge.h
+289 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/detlinefit.cpp
+290 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/detlinefit.h
+291 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/dppoint.cpp
+292 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/dppoint.h
+293 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/fontinfo.cpp
+294 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/fontinfo.h
+295 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/genblob.cpp
+296 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/genblob.h
+297 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/hpddef.h
+298 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/hpdsizes.h
+299 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ipoints.h
+300 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/linlsq.cpp
+301 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/linlsq.h
+302 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/matrix.cpp
+303 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/matrix.h
+304 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/mod128.cpp
+305 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/mod128.h
+306 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/normalis.cpp
+307 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/normalis.h
+308 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ocrblock.cpp
+309 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ocrblock.h
+310 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ocrpara.cpp
+311 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ocrpara.h
+312 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ocrrow.cpp
+313 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/blobbox.cpp
+314 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/otsuthr.cpp
+315 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/otsuthr.h
+316 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/pageres.cpp
+317 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/pageres.h
+318 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/params_training_featdef.h
+319 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/pdblock.cpp
+320 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/pdblock.h
+321 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/points.cpp
+322 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/points.h
+323 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/polyaprx.cpp
+324 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/polyaprx.h
+325 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/polyblk.cpp
+326 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/polyblk.h
+327 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/publictypes.cpp
+328 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/publictypes.h
+329 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/quadlsq.cpp
+330 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/quadlsq.h
+331 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/quadratc.cpp
+332 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/quadratc.h
+333 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/quspline.cpp
+334 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/quspline.h
+335 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ratngs.cpp
+336 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/ratngs.h
+337 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/rect.cpp
+338 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/rect.h
+339 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/rejctmap.cpp
+340 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/rejctmap.h
+341 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/seam.cpp
+342 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/seam.h
+343 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/split.cpp
+344 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/split.h
+345 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/statistc.cpp
+346 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/statistc.h
+347 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/stepblob.cpp
+348 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/stepblob.h
+349 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/vecfuncs.cpp
+350 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/vecfuncs.h
+351 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/werd.cpp
+352 silly gunzTarPerm extractEntry deps/tesseract/ccstruct/werd.h
+353 silly gunzTarPerm extractEntry deps/tesseract/ccutil/mfcpch.cpp
+354 silly gunzTarPerm extractEntry deps/tesseract/ccutil/ambigs.cpp
+355 silly gunzTarPerm extractEntry deps/tesseract/ccutil/basedir.cpp
+356 silly gunzTarPerm extractEntry deps/tesseract/ccutil/basedir.h
+357 silly gunzTarPerm extractEntry deps/tesseract/ccutil/bits16.cpp
+358 silly gunzTarPerm extractEntry deps/tesseract/ccutil/bits16.h
+359 silly gunzTarPerm extractEntry deps/tesseract/ccutil/bitvector.cpp
+360 silly gunzTarPerm extractEntry deps/tesseract/ccutil/bitvector.h
+361 silly gunzTarPerm extractEntry deps/tesseract/ccutil/ccutil.cpp
+362 silly gunzTarPerm extractEntry deps/tesseract/ccutil/ccutil.h
+363 silly gunzTarPerm extractEntry deps/tesseract/ccutil/clst.cpp
+364 silly gunzTarPerm extractEntry deps/tesseract/ccutil/clst.h
+365 silly gunzTarPerm extractEntry deps/tesseract/ccutil/elst.cpp
+366 silly gunzTarPerm extractEntry deps/tesseract/ccutil/elst.h
+367 silly gunzTarPerm extractEntry deps/tesseract/ccutil/elst2.cpp
+368 silly gunzTarPerm extractEntry deps/tesseract/ccutil/elst2.h
+369 silly gunzTarPerm extractEntry deps/tesseract/ccutil/errcode.cpp
+370 silly gunzTarPerm extractEntry deps/tesseract/ccutil/errcode.h
+371 silly gunzTarPerm extractEntry deps/tesseract/ccutil/fileerr.h
+372 silly gunzTarPerm extractEntry deps/tesseract/ccutil/genericvector.h
+373 silly gunzTarPerm extractEntry deps/tesseract/ccutil/globaloc.cpp
+374 silly gunzTarPerm extractEntry deps/tesseract/ccutil/globaloc.h
+375 silly gunzTarPerm extractEntry deps/tesseract/ccutil/hashfn.cpp
+376 silly gunzTarPerm extractEntry deps/tesseract/ccutil/hashfn.h
+377 silly gunzTarPerm extractEntry deps/tesseract/ccutil/helpers.h
+378 silly gunzTarPerm extractEntry deps/tesseract/ccutil/host.h
+379 silly gunzTarPerm extractEntry deps/tesseract/ccutil/hosthplb.h
+380 silly gunzTarPerm extractEntry deps/tesseract/ccutil/indexmapbidi.cpp
+381 silly gunzTarPerm extractEntry deps/tesseract/ccutil/indexmapbidi.h
+382 silly gunzTarPerm extractEntry deps/tesseract/ccutil/lsterr.h
+383 silly gunzTarPerm extractEntry deps/tesseract/ccutil/mainblk.cpp
+384 silly gunzTarPerm extractEntry deps/tesseract/ccutil/memry.cpp
+385 silly gunzTarPerm extractEntry deps/tesseract/ccutil/memry.h
+386 silly gunzTarPerm extractEntry deps/tesseract/ccutil/ambigs.h
+387 silly gunzTarPerm extractEntry deps/tesseract/ccutil/mfcpch.h
+388 silly gunzTarPerm extractEntry deps/tesseract/ccutil/ndminx.h
+389 silly gunzTarPerm extractEntry deps/tesseract/ccutil/notdll.h
+390 silly gunzTarPerm extractEntry deps/tesseract/ccutil/nwmain.h
+391 silly gunzTarPerm extractEntry deps/tesseract/ccutil/ocrclass.h
+392 silly gunzTarPerm extractEntry deps/tesseract/ccutil/params.cpp
+393 silly gunzTarPerm extractEntry deps/tesseract/ccutil/params.h
+394 silly gunzTarPerm extractEntry deps/tesseract/ccutil/platform.h
+395 silly gunzTarPerm extractEntry deps/tesseract/ccutil/qrsequence.h
+396 silly gunzTarPerm extractEntry deps/tesseract/ccutil/scanutils.cpp
+397 silly gunzTarPerm extractEntry deps/tesseract/ccutil/scanutils.h
+398 silly gunzTarPerm extractEntry deps/tesseract/ccutil/secname.h
+399 silly gunzTarPerm extractEntry deps/tesseract/ccutil/serialis.cpp
+400 silly gunzTarPerm extractEntry deps/tesseract/ccutil/serialis.h
+401 silly gunzTarPerm extractEntry deps/tesseract/ccutil/sorthelper.h
+402 silly gunzTarPerm extractEntry deps/tesseract/ccutil/stderr.h
+403 silly gunzTarPerm extractEntry deps/tesseract/ccutil/strngs.cpp
+404 silly gunzTarPerm extractEntry deps/tesseract/ccutil/strngs.h
+405 silly gunzTarPerm extractEntry deps/tesseract/ccutil/tesscallback.h
+406 silly gunzTarPerm extractEntry deps/tesseract/ccutil/tessdatamanager.cpp
+407 silly gunzTarPerm extractEntry deps/tesseract/ccutil/tessdatamanager.h
+408 silly gunzTarPerm extractEntry deps/tesseract/ccutil/tprintf.cpp
+409 silly gunzTarPerm extractEntry deps/tesseract/ccutil/tprintf.h
+410 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unichar.cpp
+411 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unichar.h
+412 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicharmap.cpp
+413 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicharmap.h
+414 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicharset.cpp
+415 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicharset.h
+416 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicity_table.h
+417 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicodes.cpp
+418 silly gunzTarPerm extractEntry deps/tesseract/ccutil/unicodes.h
+419 silly gunzTarPerm extractEntry deps/tesseract/classify/intproto.cpp
+420 silly gunzTarPerm extractEntry deps/tesseract/classify/adaptive.cpp
+421 silly gunzTarPerm extractEntry deps/tesseract/classify/adaptmatch.cpp
+422 silly gunzTarPerm extractEntry deps/tesseract/classify/baseline.h
+423 silly gunzTarPerm extractEntry deps/tesseract/classify/blobclass.cpp
+424 silly gunzTarPerm extractEntry deps/tesseract/classify/blobclass.h
+425 silly gunzTarPerm extractEntry deps/tesseract/classify/chartoname.cpp
+426 silly gunzTarPerm extractEntry deps/tesseract/classify/chartoname.h
+427 silly gunzTarPerm extractEntry deps/tesseract/classify/classify.cpp
+428 silly gunzTarPerm extractEntry deps/tesseract/classify/classify.h
+429 silly gunzTarPerm extractEntry deps/tesseract/classify/cluster.cpp
+430 silly gunzTarPerm extractEntry deps/tesseract/classify/cluster.h
+431 silly gunzTarPerm extractEntry deps/tesseract/classify/clusttool.cpp
+432 silly gunzTarPerm extractEntry deps/tesseract/classify/clusttool.h
+433 silly gunzTarPerm extractEntry deps/tesseract/classify/cutoffs.cpp
+434 silly gunzTarPerm extractEntry deps/tesseract/classify/cutoffs.h
+435 silly gunzTarPerm extractEntry deps/tesseract/classify/errorcounter.cpp
+436 silly gunzTarPerm extractEntry deps/tesseract/classify/errorcounter.h
+437 silly gunzTarPerm extractEntry deps/tesseract/classify/extern.h
+438 silly gunzTarPerm extractEntry deps/tesseract/classify/extract.cpp
+439 silly gunzTarPerm extractEntry deps/tesseract/classify/extract.h
+440 silly gunzTarPerm extractEntry deps/tesseract/classify/featdefs.cpp
+441 silly gunzTarPerm extractEntry deps/tesseract/classify/featdefs.h
+442 silly gunzTarPerm extractEntry deps/tesseract/classify/flexfx.cpp
+443 silly gunzTarPerm extractEntry deps/tesseract/classify/flexfx.h
+444 silly gunzTarPerm extractEntry deps/tesseract/classify/float2int.cpp
+445 silly gunzTarPerm extractEntry deps/tesseract/classify/float2int.h
+446 silly gunzTarPerm extractEntry deps/tesseract/classify/fpoint.cpp
+447 silly gunzTarPerm extractEntry deps/tesseract/classify/fpoint.h
+448 silly gunzTarPerm extractEntry deps/tesseract/classify/fxdefs.cpp
+449 silly gunzTarPerm extractEntry deps/tesseract/classify/fxdefs.h
+450 silly gunzTarPerm extractEntry deps/tesseract/classify/intfeaturedist.cpp
+451 silly gunzTarPerm extractEntry deps/tesseract/classify/intfeaturedist.h
+452 silly gunzTarPerm extractEntry deps/tesseract/classify/intfeaturemap.cpp
+453 silly gunzTarPerm extractEntry deps/tesseract/classify/intfeaturemap.h
+454 silly gunzTarPerm extractEntry deps/tesseract/classify/intfeaturespace.cpp
+455 silly gunzTarPerm extractEntry deps/tesseract/classify/intfeaturespace.h
+456 silly gunzTarPerm extractEntry deps/tesseract/classify/intfx.cpp
+457 silly gunzTarPerm extractEntry deps/tesseract/classify/intfx.h
+458 silly gunzTarPerm extractEntry deps/tesseract/classify/intmatcher.cpp
+459 silly gunzTarPerm extractEntry deps/tesseract/classify/intmatcher.h
+460 silly gunzTarPerm extractEntry deps/tesseract/classify/adaptive.h
+461 silly gunzTarPerm extractEntry deps/tesseract/classify/intproto.h
+462 silly gunzTarPerm extractEntry deps/tesseract/classify/kdtree.cpp
+463 silly gunzTarPerm extractEntry deps/tesseract/classify/kdtree.h
+464 silly gunzTarPerm extractEntry deps/tesseract/classify/mastertrainer.cpp
+465 silly gunzTarPerm extractEntry deps/tesseract/classify/mastertrainer.h
+466 silly gunzTarPerm extractEntry deps/tesseract/classify/mf.cpp
+467 silly gunzTarPerm extractEntry deps/tesseract/classify/mf.h
+468 silly gunzTarPerm extractEntry deps/tesseract/classify/mfdefs.cpp
+469 silly gunzTarPerm extractEntry deps/tesseract/classify/mfdefs.h
+470 silly gunzTarPerm extractEntry deps/tesseract/classify/mfoutline.cpp
+471 silly gunzTarPerm extractEntry deps/tesseract/classify/mfoutline.h
+472 silly gunzTarPerm extractEntry deps/tesseract/classify/mfx.cpp
+473 silly gunzTarPerm extractEntry deps/tesseract/classify/mfx.h
+474 silly gunzTarPerm extractEntry deps/tesseract/classify/normfeat.cpp
+475 silly gunzTarPerm extractEntry deps/tesseract/classify/normfeat.h
+476 silly gunzTarPerm extractEntry deps/tesseract/classify/normmatch.cpp
+477 silly gunzTarPerm extractEntry deps/tesseract/classify/normmatch.h
+478 silly gunzTarPerm extractEntry deps/tesseract/classify/ocrfeatures.cpp
+479 silly gunzTarPerm extractEntry deps/tesseract/classify/ocrfeatures.h
+480 silly gunzTarPerm extractEntry deps/tesseract/classify/outfeat.cpp
+481 silly gunzTarPerm extractEntry deps/tesseract/classify/outfeat.h
+482 silly gunzTarPerm extractEntry deps/tesseract/classify/picofeat.cpp
+483 silly gunzTarPerm extractEntry deps/tesseract/classify/picofeat.h
+484 silly gunzTarPerm extractEntry deps/tesseract/classify/protos.cpp
+485 silly gunzTarPerm extractEntry deps/tesseract/classify/protos.h
+486 silly gunzTarPerm extractEntry deps/tesseract/classify/sampleiterator.cpp
+487 silly gunzTarPerm extractEntry deps/tesseract/classify/sampleiterator.h
+488 silly gunzTarPerm extractEntry deps/tesseract/classify/shapeclassifier.h
+489 silly gunzTarPerm extractEntry deps/tesseract/classify/shapetable.cpp
+490 silly gunzTarPerm extractEntry deps/tesseract/classify/shapetable.h
+491 silly gunzTarPerm extractEntry deps/tesseract/classify/speckle.cpp
+492 silly gunzTarPerm extractEntry deps/tesseract/classify/speckle.h
+493 silly gunzTarPerm extractEntry deps/tesseract/classify/tessclassifier.cpp
+494 silly gunzTarPerm extractEntry deps/tesseract/classify/tessclassifier.h
+495 silly gunzTarPerm extractEntry deps/tesseract/classify/trainingsample.cpp
+496 silly gunzTarPerm extractEntry deps/tesseract/classify/trainingsample.h
+497 silly gunzTarPerm extractEntry deps/tesseract/classify/trainingsampleset.cpp
+498 silly gunzTarPerm extractEntry deps/tesseract/classify/trainingsampleset.h
+499 silly gunzTarPerm extractEntry deps/tesseract/classify/xform2d.cpp
+500 silly gunzTarPerm extractEntry deps/tesseract/classify/xform2d.h
+501 silly gunzTarPerm extractEntry deps/tesseract/COPYING
+502 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_search_object.h
+503 silly gunzTarPerm extractEntry deps/tesseract/cube/altlist.cpp
+504 silly gunzTarPerm extractEntry deps/tesseract/cube/beam_search.cpp
+505 silly gunzTarPerm extractEntry deps/tesseract/cube/beam_search.h
+506 silly gunzTarPerm extractEntry deps/tesseract/cube/bmp_8.cpp
+507 silly gunzTarPerm extractEntry deps/tesseract/cube/bmp_8.h
+508 silly gunzTarPerm extractEntry deps/tesseract/cube/cached_file.cpp
+509 silly gunzTarPerm extractEntry deps/tesseract/cube/cached_file.h
+510 silly gunzTarPerm extractEntry deps/tesseract/cube/char_altlist.cpp
+511 silly gunzTarPerm extractEntry deps/tesseract/cube/char_altlist.h
+512 silly gunzTarPerm extractEntry deps/tesseract/cube/char_bigrams.cpp
+513 silly gunzTarPerm extractEntry deps/tesseract/cube/char_bigrams.h
+514 silly gunzTarPerm extractEntry deps/tesseract/cube/char_samp.cpp
+515 silly gunzTarPerm extractEntry deps/tesseract/cube/char_samp.h
+516 silly gunzTarPerm extractEntry deps/tesseract/cube/char_samp_enum.cpp
+517 silly gunzTarPerm extractEntry deps/tesseract/cube/char_samp_enum.h
+518 silly gunzTarPerm extractEntry deps/tesseract/cube/char_samp_set.cpp
+519 silly gunzTarPerm extractEntry deps/tesseract/cube/char_samp_set.h
+520 silly gunzTarPerm extractEntry deps/tesseract/cube/char_set.cpp
+521 silly gunzTarPerm extractEntry deps/tesseract/cube/char_set.h
+522 silly gunzTarPerm extractEntry deps/tesseract/cube/classifier_base.h
+523 silly gunzTarPerm extractEntry deps/tesseract/cube/classifier_factory.cpp
+524 silly gunzTarPerm extractEntry deps/tesseract/cube/classifier_factory.h
+525 silly gunzTarPerm extractEntry deps/tesseract/cube/con_comp.cpp
+526 silly gunzTarPerm extractEntry deps/tesseract/cube/con_comp.h
+527 silly gunzTarPerm extractEntry deps/tesseract/cube/conv_net_classifier.cpp
+528 silly gunzTarPerm extractEntry deps/tesseract/cube/conv_net_classifier.h
+529 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_const.h
+530 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_line_object.cpp
+531 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_line_object.h
+532 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_line_segmenter.cpp
+533 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_line_segmenter.h
+534 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_object.cpp
+535 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_object.h
+536 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_search_object.cpp
+537 silly gunzTarPerm extractEntry deps/tesseract/cube/altlist.h
+538 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_tuning_params.cpp
+539 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_tuning_params.h
+540 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_utils.cpp
+541 silly gunzTarPerm extractEntry deps/tesseract/cube/cube_utils.h
+542 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_base.h
+543 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_bmp.cpp
+544 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_bmp.h
+545 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_chebyshev.cpp
+546 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_chebyshev.h
+547 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_hybrid.cpp
+548 silly gunzTarPerm extractEntry deps/tesseract/cube/feature_hybrid.h
+549 silly gunzTarPerm extractEntry deps/tesseract/cube/hybrid_neural_net_classifier.cpp
+550 silly gunzTarPerm extractEntry deps/tesseract/cube/hybrid_neural_net_classifier.h
+551 silly gunzTarPerm extractEntry deps/tesseract/cube/lang_mod_edge.h
+552 silly gunzTarPerm extractEntry deps/tesseract/cube/lang_model.h
+553 silly gunzTarPerm extractEntry deps/tesseract/cube/search_column.cpp
+554 silly gunzTarPerm extractEntry deps/tesseract/cube/search_column.h
+555 silly gunzTarPerm extractEntry deps/tesseract/cube/search_node.cpp
+556 silly gunzTarPerm extractEntry deps/tesseract/cube/search_node.h
+557 silly gunzTarPerm extractEntry deps/tesseract/cube/search_object.h
+558 silly gunzTarPerm extractEntry deps/tesseract/cube/string_32.h
+559 silly gunzTarPerm extractEntry deps/tesseract/cube/tess_lang_mod_edge.cpp
+560 silly gunzTarPerm extractEntry deps/tesseract/cube/tess_lang_mod_edge.h
+561 silly gunzTarPerm extractEntry deps/tesseract/cube/tess_lang_model.cpp
+562 silly gunzTarPerm extractEntry deps/tesseract/cube/tess_lang_model.h
+563 silly gunzTarPerm extractEntry deps/tesseract/cube/tuning_params.h
+564 silly gunzTarPerm extractEntry deps/tesseract/cube/word_altlist.cpp
+565 silly gunzTarPerm extractEntry deps/tesseract/cube/word_altlist.h
+566 silly gunzTarPerm extractEntry deps/tesseract/cube/word_list_lang_model.cpp
+567 silly gunzTarPerm extractEntry deps/tesseract/cube/word_list_lang_model.h
+568 silly gunzTarPerm extractEntry deps/tesseract/cube/word_size_model.cpp
+569 silly gunzTarPerm extractEntry deps/tesseract/cube/word_size_model.h
+570 silly gunzTarPerm extractEntry deps/tesseract/cube/word_unigrams.cpp
+571 silly gunzTarPerm extractEntry deps/tesseract/cube/word_unigrams.h
+572 silly gunzTarPerm extractEntry deps/tesseract/cutil/emalloc.h
+573 silly gunzTarPerm extractEntry deps/tesseract/cutil/bitvec.cpp
+574 silly gunzTarPerm extractEntry deps/tesseract/cutil/callcpp.cpp
+575 silly gunzTarPerm extractEntry deps/tesseract/cutil/callcpp.h
+576 silly gunzTarPerm extractEntry deps/tesseract/cutil/const.h
+577 silly gunzTarPerm extractEntry deps/tesseract/cutil/cutil.cpp
+578 silly gunzTarPerm extractEntry deps/tesseract/cutil/cutil.h
+579 silly gunzTarPerm extractEntry deps/tesseract/cutil/cutil_class.cpp
+580 silly gunzTarPerm extractEntry deps/tesseract/cutil/cutil_class.h
+581 silly gunzTarPerm extractEntry deps/tesseract/cutil/danerror.cpp
+582 silly gunzTarPerm extractEntry deps/tesseract/cutil/danerror.h
+583 silly gunzTarPerm extractEntry deps/tesseract/cutil/efio.cpp
+584 silly gunzTarPerm extractEntry deps/tesseract/cutil/efio.h
+585 silly gunzTarPerm extractEntry deps/tesseract/cutil/emalloc.cpp
+586 silly gunzTarPerm extractEntry deps/tesseract/cutil/bitvec.h
+587 silly gunzTarPerm extractEntry deps/tesseract/cutil/freelist.cpp
+588 silly gunzTarPerm extractEntry deps/tesseract/cutil/freelist.h
+589 silly gunzTarPerm extractEntry deps/tesseract/cutil/globals.h
+590 silly gunzTarPerm extractEntry deps/tesseract/cutil/listio.cpp
+591 silly gunzTarPerm extractEntry deps/tesseract/cutil/listio.h
+592 silly gunzTarPerm extractEntry deps/tesseract/cutil/oldheap.cpp
+593 silly gunzTarPerm extractEntry deps/tesseract/cutil/oldheap.h
+594 silly gunzTarPerm extractEntry deps/tesseract/cutil/oldlist.cpp
+595 silly gunzTarPerm extractEntry deps/tesseract/cutil/oldlist.h
+596 silly gunzTarPerm extractEntry deps/tesseract/cutil/structures.cpp
+597 silly gunzTarPerm extractEntry deps/tesseract/cutil/structures.h
+598 silly gunzTarPerm extractEntry deps/tesseract/cutil/tessarray.cpp
+599 silly gunzTarPerm extractEntry deps/tesseract/cutil/tessarray.h
+600 silly gunzTarPerm extractEntry deps/tesseract/ccmain/paragraphs.h
+601 silly gunzTarPerm extractEntry deps/tesseract/ccmain/adaptions.cpp
+602 silly gunzTarPerm extractEntry deps/tesseract/ccmain/control.cpp
+603 silly gunzTarPerm extractEntry deps/tesseract/ccmain/control.h
+604 silly gunzTarPerm extractEntry deps/tesseract/ccmain/cube_control.cpp
+605 silly gunzTarPerm extractEntry deps/tesseract/ccmain/cube_reco_context.cpp
+606 silly gunzTarPerm extractEntry deps/tesseract/ccmain/cube_reco_context.h
+607 silly gunzTarPerm extractEntry deps/tesseract/ccmain/cubeclassifier.cpp
+608 silly gunzTarPerm extractEntry deps/tesseract/ccmain/cubeclassifier.h
+609 silly gunzTarPerm extractEntry deps/tesseract/ccmain/docqual.cpp
+610 silly gunzTarPerm extractEntry deps/tesseract/ccmain/docqual.h
+611 silly gunzTarPerm extractEntry deps/tesseract/ccmain/equationdetect.cpp
+612 silly gunzTarPerm extractEntry deps/tesseract/ccmain/equationdetect.h
+613 silly gunzTarPerm extractEntry deps/tesseract/ccmain/fixspace.cpp
+614 silly gunzTarPerm extractEntry deps/tesseract/ccmain/fixspace.h
+615 silly gunzTarPerm extractEntry deps/tesseract/ccmain/fixxht.cpp
+616 silly gunzTarPerm extractEntry deps/tesseract/ccmain/imgscale.cpp
+617 silly gunzTarPerm extractEntry deps/tesseract/ccmain/imgscale.h
+618 silly gunzTarPerm extractEntry deps/tesseract/ccmain/ltrresultiterator.cpp
+619 silly gunzTarPerm extractEntry deps/tesseract/ccmain/ltrresultiterator.h
+620 silly gunzTarPerm extractEntry deps/tesseract/ccmain/mutableiterator.h
+621 silly gunzTarPerm extractEntry deps/tesseract/ccmain/osdetect.cpp
+622 silly gunzTarPerm extractEntry deps/tesseract/ccmain/osdetect.h
+623 silly gunzTarPerm extractEntry deps/tesseract/ccmain/output.cpp
+624 silly gunzTarPerm extractEntry deps/tesseract/ccmain/output.h
+625 silly gunzTarPerm extractEntry deps/tesseract/ccmain/pageiterator.cpp
+626 silly gunzTarPerm extractEntry deps/tesseract/ccmain/pageiterator.h
+627 silly gunzTarPerm extractEntry deps/tesseract/ccmain/pagesegmain.cpp
+628 silly gunzTarPerm extractEntry deps/tesseract/ccmain/pagewalk.cpp
+629 silly gunzTarPerm extractEntry deps/tesseract/ccmain/paragraphs.cpp
+630 silly gunzTarPerm extractEntry deps/tesseract/ccmain/applybox.cpp
+631 silly gunzTarPerm extractEntry deps/tesseract/ccmain/paragraphs_internal.h
+632 silly gunzTarPerm extractEntry deps/tesseract/ccmain/paramsd.cpp
+633 silly gunzTarPerm extractEntry deps/tesseract/ccmain/paramsd.h
+634 silly gunzTarPerm extractEntry deps/tesseract/ccmain/pgedit.cpp
+635 silly gunzTarPerm extractEntry deps/tesseract/ccmain/pgedit.h
+636 silly gunzTarPerm extractEntry deps/tesseract/ccmain/recogtraining.cpp
+637 silly gunzTarPerm extractEntry deps/tesseract/ccmain/reject.cpp
+638 silly gunzTarPerm extractEntry deps/tesseract/ccmain/reject.h
+639 silly gunzTarPerm extractEntry deps/tesseract/ccmain/resultiterator.cpp
+640 silly gunzTarPerm extractEntry deps/tesseract/ccmain/resultiterator.h
+641 silly gunzTarPerm extractEntry deps/tesseract/ccmain/scaleimg.cpp
+642 silly gunzTarPerm extractEntry deps/tesseract/ccmain/scaleimg.h
+643 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tessbox.cpp
+644 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tessbox.h
+645 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tessedit.cpp
+646 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tessedit.h
+647 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tesseract_cube_combiner.cpp
+648 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tesseract_cube_combiner.h
+649 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tesseractclass.cpp
+650 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tesseractclass.h
+651 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tessvars.cpp
+652 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tessvars.h
+653 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tfacep.h
+654 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tfacepp.cpp
+655 silly gunzTarPerm extractEntry deps/tesseract/ccmain/tfacepp.h
+656 silly gunzTarPerm extractEntry deps/tesseract/ccmain/thresholder.cpp
+657 silly gunzTarPerm extractEntry deps/tesseract/ccmain/thresholder.h
+658 silly gunzTarPerm extractEntry deps/tesseract/ccmain/werdit.cpp
+659 silly gunzTarPerm extractEntry deps/tesseract/ccmain/werdit.h
+660 silly gunzTarPerm extractEntry deps/tesseract/image/imgs.h
+661 silly gunzTarPerm extractEntry deps/tesseract/image/image.cpp
+662 silly gunzTarPerm extractEntry deps/tesseract/image/img.h
+663 silly gunzTarPerm extractEntry deps/tesseract/image/imgerrs.h
+664 silly gunzTarPerm extractEntry deps/tesseract/image/imgs.cpp
+665 silly gunzTarPerm extractEntry deps/tesseract/image/image.h
+666 silly gunzTarPerm extractEntry deps/tesseract/image/imgtiff.cpp
+667 silly gunzTarPerm extractEntry deps/tesseract/image/imgtiff.h
+668 silly gunzTarPerm extractEntry deps/tesseract/image/imgunpk.h
+669 silly gunzTarPerm extractEntry deps/tesseract/image/svshowim.cpp
+670 silly gunzTarPerm extractEntry deps/tesseract/image/svshowim.h
+671 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/input_file_buffer.cpp
+672 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/input_file_buffer.h
+673 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/neural_net.cpp
+674 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/neural_net.h
+675 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/neuron.cpp
+676 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/neuron.h
+677 silly gunzTarPerm extractEntry deps/tesseract/neural_networks/runtime/sigmoid_table.cpp
+678 silly gunzTarPerm extractEntry deps/tesseract/port/gettimeofday.cpp
+679 silly gunzTarPerm extractEntry deps/tesseract/port/gettimeofday.h
+680 silly gunzTarPerm extractEntry deps/tesseract/port/mathfix.h
+681 silly gunzTarPerm extractEntry deps/tesseract/port/strtok_r.cpp
+682 silly gunzTarPerm extractEntry deps/tesseract/port/strtok_r.h
+683 silly gunzTarPerm extractEntry deps/tesseract/tesseract.gyp
+684 silly gunzTarPerm extractEntry deps/tesseract/textord/linefind.h
+685 silly gunzTarPerm extractEntry deps/tesseract/textord/alignedblob.cpp
+686 silly gunzTarPerm extractEntry deps/tesseract/textord/bbgrid.cpp
+687 silly gunzTarPerm extractEntry deps/tesseract/textord/bbgrid.h
+688 silly gunzTarPerm extractEntry deps/tesseract/textord/blkocc.cpp
+689 silly gunzTarPerm extractEntry deps/tesseract/textord/blkocc.h
+690 silly gunzTarPerm extractEntry deps/tesseract/textord/blobgrid.cpp
+691 silly gunzTarPerm extractEntry deps/tesseract/textord/blobgrid.h
+692 silly gunzTarPerm extractEntry deps/tesseract/textord/ccnontextdetect.cpp
+693 silly gunzTarPerm extractEntry deps/tesseract/textord/ccnontextdetect.h
+694 silly gunzTarPerm extractEntry deps/tesseract/textord/cjkpitch.cpp
+695 silly gunzTarPerm extractEntry deps/tesseract/textord/cjkpitch.h
+696 silly gunzTarPerm extractEntry deps/tesseract/textord/colfind.cpp
+697 silly gunzTarPerm extractEntry deps/tesseract/textord/colfind.h
+698 silly gunzTarPerm extractEntry deps/tesseract/textord/colpartition.cpp
+699 silly gunzTarPerm extractEntry deps/tesseract/textord/colpartition.h
+700 silly gunzTarPerm extractEntry deps/tesseract/textord/colpartitiongrid.cpp
+701 silly gunzTarPerm extractEntry deps/tesseract/textord/colpartitiongrid.h
+702 silly gunzTarPerm extractEntry deps/tesseract/textord/colpartitionset.cpp
+703 silly gunzTarPerm extractEntry deps/tesseract/textord/colpartitionset.h
+704 silly gunzTarPerm extractEntry deps/tesseract/textord/devanagari_processing.cpp
+705 silly gunzTarPerm extractEntry deps/tesseract/textord/devanagari_processing.h
+706 silly gunzTarPerm extractEntry deps/tesseract/textord/drawedg.cpp
+707 silly gunzTarPerm extractEntry deps/tesseract/textord/drawedg.h
+708 silly gunzTarPerm extractEntry deps/tesseract/textord/drawtord.cpp
+709 silly gunzTarPerm extractEntry deps/tesseract/textord/drawtord.h
+710 silly gunzTarPerm extractEntry deps/tesseract/textord/edgblob.cpp
+711 silly gunzTarPerm extractEntry deps/tesseract/textord/edgblob.h
+712 silly gunzTarPerm extractEntry deps/tesseract/textord/edgloop.cpp
+713 silly gunzTarPerm extractEntry deps/tesseract/textord/edgloop.h
+714 silly gunzTarPerm extractEntry deps/tesseract/textord/equationdetectbase.cpp
+715 silly gunzTarPerm extractEntry deps/tesseract/textord/equationdetectbase.h
+716 silly gunzTarPerm extractEntry deps/tesseract/textord/fpchop.cpp
+717 silly gunzTarPerm extractEntry deps/tesseract/textord/fpchop.h
+718 silly gunzTarPerm extractEntry deps/tesseract/textord/gap_map.cpp
+719 silly gunzTarPerm extractEntry deps/tesseract/textord/gap_map.h
+720 silly gunzTarPerm extractEntry deps/tesseract/textord/imagefind.cpp
+721 silly gunzTarPerm extractEntry deps/tesseract/textord/imagefind.h
+722 silly gunzTarPerm extractEntry deps/tesseract/textord/linefind.cpp
+723 silly gunzTarPerm extractEntry deps/tesseract/textord/alignedblob.h
+724 silly gunzTarPerm extractEntry deps/tesseract/textord/makerow.cpp
+725 silly gunzTarPerm extractEntry deps/tesseract/textord/makerow.h
+726 silly gunzTarPerm extractEntry deps/tesseract/textord/oldbasel.cpp
+727 silly gunzTarPerm extractEntry deps/tesseract/textord/oldbasel.h
+728 silly gunzTarPerm extractEntry deps/tesseract/textord/pithsync.cpp
+729 silly gunzTarPerm extractEntry deps/tesseract/textord/pithsync.h
+730 silly gunzTarPerm extractEntry deps/tesseract/textord/pitsync1.cpp
+731 silly gunzTarPerm extractEntry deps/tesseract/textord/pitsync1.h
+732 silly gunzTarPerm extractEntry deps/tesseract/textord/scanedg.cpp
+733 silly gunzTarPerm extractEntry deps/tesseract/textord/scanedg.h
+734 silly gunzTarPerm extractEntry deps/tesseract/textord/sortflts.cpp
+735 silly gunzTarPerm extractEntry deps/tesseract/textord/sortflts.h
+736 silly gunzTarPerm extractEntry deps/tesseract/textord/strokewidth.cpp
+737 silly gunzTarPerm extractEntry deps/tesseract/textord/strokewidth.h
+738 silly gunzTarPerm extractEntry deps/tesseract/textord/tabfind.cpp
+739 silly gunzTarPerm extractEntry deps/tesseract/textord/tabfind.h
+740 silly gunzTarPerm extractEntry deps/tesseract/textord/tablefind.cpp
+741 silly gunzTarPerm extractEntry deps/tesseract/textord/tablefind.h
+742 silly gunzTarPerm extractEntry deps/tesseract/textord/tablerecog.cpp
+743 silly gunzTarPerm extractEntry deps/tesseract/textord/tablerecog.h
+744 silly gunzTarPerm extractEntry deps/tesseract/textord/tabvector.cpp
+745 silly gunzTarPerm extractEntry deps/tesseract/textord/tabvector.h
+746 silly gunzTarPerm extractEntry deps/tesseract/textord/textlineprojection.cpp
+747 silly gunzTarPerm extractEntry deps/tesseract/textord/textlineprojection.h
+748 silly gunzTarPerm extractEntry deps/tesseract/textord/textord.cpp
+749 silly gunzTarPerm extractEntry deps/tesseract/textord/textord.h
+750 silly gunzTarPerm extractEntry deps/tesseract/textord/topitch.cpp
+751 silly gunzTarPerm extractEntry deps/tesseract/textord/topitch.h
+752 silly gunzTarPerm extractEntry deps/tesseract/textord/tordmain.cpp
+753 silly gunzTarPerm extractEntry deps/tesseract/textord/tordmain.h
+754 silly gunzTarPerm extractEntry deps/tesseract/textord/tospace.cpp
+755 silly gunzTarPerm extractEntry deps/tesseract/textord/tovars.cpp
+756 silly gunzTarPerm extractEntry deps/tesseract/textord/tovars.h
+757 silly gunzTarPerm extractEntry deps/tesseract/textord/underlin.cpp
+758 silly gunzTarPerm extractEntry deps/tesseract/textord/underlin.h
+759 silly gunzTarPerm extractEntry deps/tesseract/textord/wordseg.cpp
+760 silly gunzTarPerm extractEntry deps/tesseract/textord/wordseg.h
+761 silly gunzTarPerm extractEntry deps/tesseract/textord/workingpartset.cpp
+762 silly gunzTarPerm extractEntry deps/tesseract/textord/workingpartset.h
+763 silly gunzTarPerm extractEntry deps/tesseract/viewer/scrollview.cpp
+764 silly gunzTarPerm extractEntry deps/tesseract/viewer/scrollview.h
+765 silly gunzTarPerm extractEntry deps/tesseract/viewer/svmnode.cpp
+766 silly gunzTarPerm extractEntry deps/tesseract/viewer/svmnode.h
+767 silly gunzTarPerm extractEntry deps/tesseract/viewer/svpaint.cpp
+768 silly gunzTarPerm extractEntry deps/tesseract/viewer/svutil.cpp
+769 silly gunzTarPerm extractEntry deps/tesseract/viewer/svutil.h
+770 silly gunzTarPerm extractEntry deps/tesseract/wordrec/makechop.h
+771 silly gunzTarPerm extractEntry deps/tesseract/wordrec/associate.cpp
+772 silly gunzTarPerm extractEntry deps/tesseract/wordrec/bestfirst.cpp
+773 silly gunzTarPerm extractEntry deps/tesseract/wordrec/bestfirst.h
+774 silly gunzTarPerm extractEntry deps/tesseract/wordrec/chop.cpp
+775 silly gunzTarPerm extractEntry deps/tesseract/wordrec/chop.h
+776 silly gunzTarPerm extractEntry deps/tesseract/wordrec/chopper.cpp
+777 silly gunzTarPerm extractEntry deps/tesseract/wordrec/chopper.h
+778 silly gunzTarPerm extractEntry deps/tesseract/wordrec/closed.cpp
+779 silly gunzTarPerm extractEntry deps/tesseract/wordrec/closed.h
+780 silly gunzTarPerm extractEntry deps/tesseract/wordrec/drawfx.cpp
+781 silly gunzTarPerm extractEntry deps/tesseract/wordrec/drawfx.h
+782 silly gunzTarPerm extractEntry deps/tesseract/wordrec/findseam.cpp
+783 silly gunzTarPerm extractEntry deps/tesseract/wordrec/findseam.h
+784 silly gunzTarPerm extractEntry deps/tesseract/wordrec/gradechop.cpp
+785 silly gunzTarPerm extractEntry deps/tesseract/wordrec/gradechop.h
+786 silly gunzTarPerm extractEntry deps/tesseract/wordrec/heuristic.cpp
+787 silly gunzTarPerm extractEntry deps/tesseract/wordrec/language_model.cpp
+788 silly gunzTarPerm extractEntry deps/tesseract/wordrec/language_model.h
+789 silly gunzTarPerm extractEntry deps/tesseract/wordrec/makechop.cpp
+790 silly gunzTarPerm extractEntry deps/tesseract/wordrec/associate.h
+791 silly gunzTarPerm extractEntry deps/tesseract/wordrec/matchtab.cpp
+792 silly gunzTarPerm extractEntry deps/tesseract/wordrec/matchtab.h
+793 silly gunzTarPerm extractEntry deps/tesseract/wordrec/measure.h
+794 silly gunzTarPerm extractEntry deps/tesseract/wordrec/olutil.cpp
+795 silly gunzTarPerm extractEntry deps/tesseract/wordrec/olutil.h
+796 silly gunzTarPerm extractEntry deps/tesseract/wordrec/outlines.cpp
+797 silly gunzTarPerm extractEntry deps/tesseract/wordrec/outlines.h
+798 silly gunzTarPerm extractEntry deps/tesseract/wordrec/pieces.cpp
+799 silly gunzTarPerm extractEntry deps/tesseract/wordrec/plotedges.cpp
+800 silly gunzTarPerm extractEntry deps/tesseract/wordrec/plotedges.h
+801 silly gunzTarPerm extractEntry deps/tesseract/wordrec/plotseg.cpp
+802 silly gunzTarPerm extractEntry deps/tesseract/wordrec/plotseg.h
+803 silly gunzTarPerm extractEntry deps/tesseract/wordrec/render.cpp
+804 silly gunzTarPerm extractEntry deps/tesseract/wordrec/render.h
+805 silly gunzTarPerm extractEntry deps/tesseract/wordrec/segsearch.cpp
+806 silly gunzTarPerm extractEntry deps/tesseract/wordrec/tface.cpp
+807 silly gunzTarPerm extractEntry deps/tesseract/wordrec/wordclass.cpp
+808 silly gunzTarPerm extractEntry deps/tesseract/wordrec/wordclass.h
+809 silly gunzTarPerm extractEntry deps/tesseract/wordrec/wordrec.cpp
+810 silly gunzTarPerm extractEntry deps/tesseract/wordrec/wordrec.h
+811 silly gunzTarPerm extractEntry lib/tesseract.js
+812 silly gunzTarPerm extractEntry src/module.cc
+813 silly gunzTarPerm extractEntry src/TesseractBinding.cc
+814 silly gunzTarPerm extractEntry src/TesseractBinding.h
+815 silly gunzTarPerm extractEntry tessdata/eng.traineddata
+816 silly gunzTarPerm extractEntry test/tesseractjs.test.js
+817 silly gunzTarPerm extractEntry test/images/test-image.jpg
+818 silly gunzTarPerm extractEntry test/images/test-image.png
+819 verbose write writing to /usr/local/lib/node_modules/tesseract-js/package.json
+820 info preinstall tesseract-js@0.0.1
+821 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/tesseract-js/package.json
+822 silly prepareForInstallMany adding chai@1.3.0 from tesseract-js dependencies
+823 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/tesseract-js/package.json
+824 silly cache add args [ 'chai@1.3.0', null ]
+825 verbose cache add spec chai@1.3.0
+826 silly cache add parsed spec { raw: 'chai@1.3.0',
+826 silly cache add   scope: null,
+826 silly cache add   name: 'chai',
+826 silly cache add   rawSpec: '1.3.0',
+826 silly cache add   spec: '1.3.0',
+826 silly cache add   type: 'version' }
+827 silly addNamed chai@1.3.0
+828 verbose addNamed "1.3.0" is a plain semver version for chai
+829 silly mapToRegistry name chai
+830 silly mapToRegistry using default registry
+831 silly mapToRegistry registry https://registry.npmjs.org/
+832 silly mapToRegistry uri https://registry.npmjs.org/chai
+833 verbose addNameVersion registry:https://registry.npmjs.org/chai not in flight; fetching
+834 verbose request uri https://registry.npmjs.org/chai
+835 verbose request no auth needed
+836 info attempt registry request try #1 at 3:28:59 PM
+837 http request GET https://registry.npmjs.org/chai
+838 http 200 https://registry.npmjs.org/chai
+839 silly get cb [ 200,
+839 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+839 silly get     etag: '"A0LBAB1KPL4HNYWUGCHZ1RD3J"',
+839 silly get     'content-type': 'application/json',
+839 silly get     'cache-control': 'max-age=60',
+839 silly get     'content-length': '78518',
+839 silly get     'accept-ranges': 'bytes',
+839 silly get     date: 'Fri, 31 Jul 2015 19:28:59 GMT',
+839 silly get     via: '1.1 varnish',
+839 silly get     age: '14',
+839 silly get     connection: 'keep-alive',
+839 silly get     'x-served-by': 'cache-atl6234-ATL',
+839 silly get     'x-cache': 'HIT',
+839 silly get     'x-cache-hits': '2',
+839 silly get     'x-timer': 'S1438370939.779671,VS0,VE0',
+839 silly get     vary: 'Accept' } ]
+840 verbose get saving chai to /Users/ryan/.npm/registry.npmjs.org/chai/.cache.json
+841 silly mapToRegistry name chai
+842 silly mapToRegistry using default registry
+843 silly mapToRegistry registry https://registry.npmjs.org/
+844 silly mapToRegistry uri https://registry.npmjs.org/chai
+845 verbose addRemoteTarball https://registry.npmjs.org/chai/-/chai-1.3.0.tgz not in flight; adding
+846 verbose addRemoteTarball [ 'https://registry.npmjs.org/chai/-/chai-1.3.0.tgz',
+846 verbose addRemoteTarball   '6a597c6377c54e9dedc2ddb4641296fc05ff4fcc' ]
+847 info retry fetch attempt 1 at 3:28:59 PM
+848 info attempt registry request try #1 at 3:28:59 PM
+849 http fetch GET https://registry.npmjs.org/chai/-/chai-1.3.0.tgz
+850 http fetch 200 https://registry.npmjs.org/chai/-/chai-1.3.0.tgz
+851 silly fetchAndShaCheck shasum 6a597c6377c54e9dedc2ddb4641296fc05ff4fcc
+852 verbose addTmpTarball /tmp/npm-15294-c91e0de3/registry.npmjs.org/chai/-/chai-1.3.0.tgz not in flight; adding
+853 verbose addTmpTarball already have metadata; skipping unpack for chai@1.3.0
+854 silly cache afterAdd chai@1.3.0
+855 verbose afterAdd /Users/ryan/.npm/chai/1.3.0/package/package.json not in flight; writing
+856 verbose afterAdd /Users/ryan/.npm/chai/1.3.0/package/package.json written
+857 silly install resolved [ { author: { name: 'Jake Luer', email: 'jake@alogicalparadox.com' },
+857 silly install resolved     name: 'chai',
+857 silly install resolved     description: 'BDD/TDD assertion library for node.js and the browser. Test framework agnostic.',
+857 silly install resolved     keywords: [ 'test', 'assertion', 'assert', 'testing', 'chai' ],
+857 silly install resolved     homepage: 'http://chaijs.com',
+857 silly install resolved     license: 'MIT',
+857 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+857 silly install resolved     version: '1.3.0',
+857 silly install resolved     repository: { type: 'git', url: 'https://github.com/chaijs/chai' },
+857 silly install resolved     bugs: { url: 'https://github.com/chaijs/chai/issues' },
+857 silly install resolved     main: './index',
+857 silly install resolved     scripts: { test: 'mocha' },
+857 silly install resolved     engines: { node: '>= 0.4.0' },
+857 silly install resolved     dependencies: {},
+857 silly install resolved     devDependencies: { folio: '0.3.x', mocha: '*' },
+857 silly install resolved     _id: 'chai@1.3.0',
+857 silly install resolved     dist:
+857 silly install resolved      { shasum: '6a597c6377c54e9dedc2ddb4641296fc05ff4fcc',
+857 silly install resolved        tarball: 'http://registry.npmjs.org/chai/-/chai-1.3.0.tgz' },
+857 silly install resolved     _npmVersion: '1.1.62',
+857 silly install resolved     _npmUser: { name: 'jakeluer', email: 'jake@alogicalparadox.com' },
+857 silly install resolved     maintainers: [ [Object] ],
+857 silly install resolved     directories: {},
+857 silly install resolved     _shasum: '6a597c6377c54e9dedc2ddb4641296fc05ff4fcc',
+857 silly install resolved     _resolved: 'https://registry.npmjs.org/chai/-/chai-1.3.0.tgz',
+857 silly install resolved     _from: 'chai@1.3.0' } ]
+858 info install chai@1.3.0 into /usr/local/lib/node_modules/tesseract-js
+859 info installOne chai@1.3.0
+860 verbose installOne of chai to /usr/local/lib/node_modules/tesseract-js not in flight; installing
+861 verbose lock using /Users/ryan/.npm/_locks/chai-917d8d5f8837849d.lock for /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+862 silly install write writing chai 1.3.0 to /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+863 verbose unbuild lib/node_modules/tesseract-js/node_modules/chai
+864 silly gentlyRm /usr/local/lib/node_modules/tesseract-js/node_modules/chai is being purged from base /usr/local
+865 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+866 verbose tar unpack /Users/ryan/.npm/chai/1.3.0/package.tgz
+867 verbose tar unpacking to /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+868 silly gentlyRm /usr/local/lib/node_modules/tesseract-js/node_modules/chai is being purged
+869 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+870 silly gunzTarPerm modes [ '755', '644' ]
+871 silly gunzTarPerm extractEntry package.json
+872 silly gunzTarPerm extractEntry .npmignore
+873 silly gunzTarPerm extractEntry README.md
+874 silly gunzTarPerm extractEntry chai.js
+875 silly gunzTarPerm extractEntry index.js
+876 silly gunzTarPerm extractEntry History.md
+877 silly gunzTarPerm extractEntry lib/chai.js
+878 silly gunzTarPerm extractEntry lib/chai/assertion.js
+879 silly gunzTarPerm extractEntry lib/chai/error.js
+880 silly gunzTarPerm extractEntry lib/chai/browser/error.js
+881 silly gunzTarPerm extractEntry lib/chai/core/assertions.js
+882 silly gunzTarPerm extractEntry lib/chai/interface/assert.js
+883 silly gunzTarPerm extractEntry lib/chai/interface/expect.js
+884 silly gunzTarPerm extractEntry lib/chai/interface/should.js
+885 silly gunzTarPerm extractEntry lib/chai/utils/addChainableMethod.js
+886 silly gunzTarPerm extractEntry lib/chai/utils/flag.js
+887 silly gunzTarPerm extractEntry lib/chai/utils/getActual.js
+888 silly gunzTarPerm extractEntry lib/chai/utils/getMessage.js
+889 silly gunzTarPerm extractEntry lib/chai/utils/getName.js
+890 silly gunzTarPerm extractEntry lib/chai/utils/eql.js
+891 silly gunzTarPerm extractEntry lib/chai/utils/index.js
+892 silly gunzTarPerm extractEntry lib/chai/utils/inspect.js
+893 silly gunzTarPerm extractEntry lib/chai/utils/objDisplay.js
+894 silly gunzTarPerm extractEntry lib/chai/utils/overwriteMethod.js
+895 silly gunzTarPerm extractEntry lib/chai/utils/overwriteProperty.js
+896 silly gunzTarPerm extractEntry lib/chai/utils/addProperty.js
+897 silly gunzTarPerm extractEntry lib/chai/utils/test.js
+898 silly gunzTarPerm extractEntry lib/chai/utils/addMethod.js
+899 silly gunzTarPerm extractEntry lib/chai/utils/transferFlags.js
+900 silly gunzTarPerm extractEntry lib/chai/utils/getPathValue.js
+901 verbose write writing to /usr/local/lib/node_modules/tesseract-js/node_modules/chai/package.json
+902 info preinstall chai@1.3.0
+903 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/tesseract-js/node_modules/chai/package.json
+904 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/tesseract-js/node_modules/chai/package.json
+905 silly install resolved []
+906 verbose about to build /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+907 info build /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+908 info linkStuff chai@1.3.0
+909 silly linkStuff chai@1.3.0 has /usr/local/lib/node_modules/tesseract-js/node_modules as its parent node_modules
+910 silly linkStuff chai@1.3.0 is part of a global install
+911 silly linkStuff chai@1.3.0 is installed into a global node_modules
+912 verbose linkBins chai@1.3.0
+913 verbose linkMans chai@1.3.0
+914 verbose rebuildBundles chai@1.3.0
+915 info install chai@1.3.0
+916 info postinstall chai@1.3.0
+917 verbose unlock done using /Users/ryan/.npm/_locks/chai-917d8d5f8837849d.lock for /usr/local/lib/node_modules/tesseract-js/node_modules/chai
+918 verbose about to build /usr/local/lib/node_modules/tesseract-js
+919 info build /usr/local/lib/node_modules/tesseract-js
+920 info linkStuff tesseract-js@0.0.1
+921 silly linkStuff tesseract-js@0.0.1 has /usr/local/lib/node_modules as its parent node_modules
+922 silly linkStuff tesseract-js@0.0.1 is part of a global install
+923 silly linkStuff tesseract-js@0.0.1 is installed into a global node_modules
+924 silly linkStuff tesseract-js@0.0.1 is installed into the top-level global node_modules
+925 verbose linkBins tesseract-js@0.0.1
+926 verbose linkMans tesseract-js@0.0.1
+927 verbose rebuildBundles tesseract-js@0.0.1
+928 verbose rebuildBundles [ 'chai' ]
+929 info install tesseract-js@0.0.1
+930 verbose unsafe-perm in lifecycle false
+931 info tesseract-js@0.0.1 Failed to exec install script
+932 verbose unlock done using /Users/ryan/.npm/_locks/tesseract-js-d029f1ac0e0b348e.lock for /usr/local/lib/node_modules/tesseract-js
+933 verbose stack Error: tesseract-js@0.0.1 install: `node-gyp rebuild`
+933 verbose stack Exit status 1
+933 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+933 verbose stack     at EventEmitter.emit (events.js:110:17)
+933 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+933 verbose stack     at ChildProcess.emit (events.js:110:17)
+933 verbose stack     at maybeClose (child_process.js:1015:16)
+933 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+934 verbose pkgid tesseract-js@0.0.1
+935 verbose cwd /Users/ryan/Documents/Work/Fullstack_Academy/semester1/sorting
+936 error Darwin 14.4.0
+937 error argv "node" "/usr/local/bin/npm" "install" "-g" "tesseract-js"
+938 error node v0.12.7
+939 error npm  v2.11.3
+940 error code ELIFECYCLE
+941 error tesseract-js@0.0.1 install: `node-gyp rebuild`
+941 error Exit status 1
+942 error Failed at the tesseract-js@0.0.1 install script 'node-gyp rebuild'.
+942 error This is most likely a problem with the tesseract-js package,
+942 error not with npm itself.
+942 error Tell the author that this fails on your system:
+942 error     node-gyp rebuild
+942 error You can get their info via:
+942 error     npm owner ls tesseract-js
+942 error There is likely additional logging output above.
+943 verbose exit [ 1, true ]
+944 verbose unbuild lib/node_modules/tesseract-js
+945 info preuninstall tesseract-js@0.0.1
+946 info uninstall tesseract-js@0.0.1
+947 verbose unbuild rmStuff tesseract-js@0.0.1 from /usr/local/lib/node_modules
+948 info postuninstall tesseract-js@0.0.1
+949 silly gentlyRm /usr/local/lib/node_modules/tesseract-js is being purged from base /usr/local
+950 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/tesseract-js
+951 silly vacuum-fs purging /usr/local/lib/node_modules/tesseract-js
+952 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
